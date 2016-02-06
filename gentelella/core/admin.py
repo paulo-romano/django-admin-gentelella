@@ -1,3 +1,7 @@
 from django.contrib import admin
+from gentelella.core.models import Pessoa
 
-# Register your models here.
+class PessoaAdminModel(admin.ModelAdmin):
+    pass
+
+admin.site.register(Pessoa, PessoaAdminModel)
